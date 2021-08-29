@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "402890076505",
+    "project_id": "lets-connect-a6c42",
+    "storage_bucket": "lets-connect-a6c42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402890076505:android:ddd5fad0848cfdea8d1c48",
+        "android_client_info": {
+          "package_name": "com.timeepass.project.letsconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402890076505-5i4gjjn2a7ne0sbe1ciklu95273ud45i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timeepass.project.letsconnect",
+            "certificate_hash": "06cc779fad45f2a64f48f4d9e38ffa095c33f7b3"
+          }
+        },
+        {
+          "client_id": "402890076505-v3q0kkkpuvru207dl2c0675hff8b8sqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoWwQutihoatme5SfsLVE0JcHKAmZoPc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402890076505-v3q0kkkpuvru207dl2c0675hff8b8sqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
