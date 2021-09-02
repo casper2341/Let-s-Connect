@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener onNav = new BottomNavigationView.OnNavigationItemSelectedListener() {
-        @SuppressLint("NonConstantResourceId")
+
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
