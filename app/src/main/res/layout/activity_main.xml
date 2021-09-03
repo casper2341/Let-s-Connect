@@ -21,6 +21,7 @@
         app:itemIconTint="@android:color/black"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="49dp"
+        app:itemTextColor="@android:color/black"
         app:menu="@menu/bottom_menu"/>
 
 </RelativeLayout>

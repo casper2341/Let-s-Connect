@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/border_decoration.xml" value="0.15462962962962962" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/button_back.xml" value="0.11481481481481481" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_add_photo_alternate_24.xml" value="0.11296296296296296" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.11203703703703703" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.24270833333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.24270833333333333" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.11203703703703703" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.11296296296296296" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.24270833333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_public_24.xml" value="0.24270833333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_queue_24.xml" value="0.24270833333333333" />
@@ -12,7 +18,7 @@
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_work_24.xml" value="0.24270833333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_name.xml" value="0.24270833333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_create_profile.xml" value="0.1" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/profilefragment.xml" value="0.18931159420289856" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/profilefragment.xml" value="0.264" />
       </map>
     </option>
   </component>
