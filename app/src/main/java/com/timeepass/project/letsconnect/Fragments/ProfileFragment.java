@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,8 +21,10 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.squareup.picasso.Picasso;
+import com.timeepass.project.letsconnect.Class.BottomSheetMenu;
 import com.timeepass.project.letsconnect.R;
 import com.timeepass.project.letsconnect.UserProfile.CreateProfile;
+import com.timeepass.project.letsconnect.UserProfile.UpdateProfile;
 
 import org.w3c.dom.Text;
 
@@ -29,6 +32,14 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
 {
     ImageView imageView;
     TextView nameEt, profEt, bioEt, emailEt, webEt;
+    ImageButton ib_edit, imageButtonmenu;
+
+    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+    String currentId = user.getUid();
+
+    DocumentReference reference;
+    FirebaseFirestore firestore = FirebaseFirestore.getInstance();
+
 
     @Nullable
     @Override
@@ -42,6 +53,8 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
     {
         super.onActivityCreated(savedInstanceState);
 
+        reference = firestore.collection("user").document(currentId);
+
          imageView = getActivity().findViewById(R.id.iv_proffrag);
          nameEt = getActivity().findViewById(R.id.tv_name_proffrag);
          profEt = getActivity().findViewById(R.id.tv_prof_proffrag);
@@ -49,7 +62,11 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
          emailEt = getActivity().findViewById(R.id.tv_email_proffrag);
          webEt = getActivity().findViewById(R.id.tv_web_proffrag);
 
+        ib_edit = getActivity().findViewById(R.id.ib_edit_f1);
+        imageButtonmenu = getActivity().findViewById(R.id.ib_menu_f1);
 
+        imageButtonmenu.setOnClickListener(this);
+        ib_edit.setOnClickListener(this);
     }
 
     @Override
@@ -57,7 +74,14 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
 
         switch (view.getId())
         {
-
+            case R.id.ib_edit_f1:
+                Intent intent = new Intent(getActivity(), UpdateProfile.class);
+                startActivity(intent);
+                break;
+            case R.id.ib_menu_f1:
+                BottomSheetMenu bottomSheetMenu = new BottomSheetMenu();
+                bottomSheetMenu.show(getFragmentManager(), "bottomsheet");
+                break;
         }
     }
 
@@ -66,12 +90,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
         super.onStart();
 
 
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        String currentId = user.getUid();
-        DocumentReference reference;
-        FirebaseFirestore firestore = FirebaseFirestore.getInstance();
 
-        reference = firestore.collection("user").document(currentId);
 
         reference.get()
                 .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {

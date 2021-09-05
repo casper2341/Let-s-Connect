@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         register_btn = findViewById(R.id.login_to_signup);
         login_btn = findViewById(R.id.button_login);
         checkBox = findViewById(R.id.login_checkbox);
-        progressBar = findViewById(R.id.progressbar_register);
+        progressBar = findViewById(R.id.progressbar_login);
         mAuth = FirebaseAuth.getInstance();
 
 
