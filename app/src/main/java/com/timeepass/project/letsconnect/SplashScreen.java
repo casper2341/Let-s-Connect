@@ -11,6 +11,9 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class SplashScreen extends AppCompatActivity {
 
     ImageView imageView;
@@ -36,13 +39,27 @@ public class SplashScreen extends AppCompatActivity {
         animatorSet.playTogether(animatorY, animatorname);
         animatorSet.start();
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
-                startActivity(intent);
-                finish();
+                if(user != null)
+                {
+                    Intent intent = new Intent(SplashScreen.this , MainActivity.class);
+                    startActivity(intent);
+                }
+                else
+                {
+                    Intent intent = new Intent(SplashScreen.this , LoginActivity.class);
+                    startActivity(intent);
+                }
             }
         }, 4000);
     }
