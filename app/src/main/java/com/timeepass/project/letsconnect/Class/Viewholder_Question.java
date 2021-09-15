@@ -29,7 +29,7 @@ public class Viewholder_Question extends RecyclerView.ViewHolder
     public ImageButton fvrt_btn;
     DatabaseReference favouriteref;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-
+   public TextView deletebtn, replybtn, replybtn1;
 
     public Viewholder_Question(@NonNull View itemView) {
         super(itemView);
@@ -42,6 +42,8 @@ public class Viewholder_Question extends RecyclerView.ViewHolder
         time_result = itemView.findViewById(R.id.time_que_item_tv);
         name_result = itemView.findViewById(R.id.name_que_item_tv);
         question_result = itemView.findViewById(R.id.que_item_tv);
+        replybtn = itemView.findViewById(R.id.reply_item_que);
+
 
         Picasso.get().load(url).into(imageview);
         time_result.setText(time);
@@ -87,14 +89,28 @@ public class Viewholder_Question extends RecyclerView.ViewHolder
         ImageView imageView = itemView.findViewById(R.id.related_que_item);
         TextView nametv = itemView.findViewById(R.id.related_name_que_item_tv);
         TextView quetv = itemView.findViewById(R.id.related_que_item_tv);
-        TextView replybtn = itemView.findViewById(R.id.related_reply_item_que);
+        replybtn1 = itemView.findViewById(R.id.related_reply_item_que);
 
         Picasso.get().load(url).into(imageView);
         nametv.setText(name);
         timetv.setText(time);
         quetv.setText(question);
 
-
     }
 
+    public void setitemYourQue(Application activity, String name, String url, String userid, String key,
+                               String question, String privacy, String time)
+    {
+        TextView timetv = itemView.findViewById(R.id.yourque_time_que_item_tv);
+        ImageView imageView = itemView.findViewById(R.id.yourque_que_item);
+        TextView nametv = itemView.findViewById(R.id.yourque_name_que_item_tv);
+        TextView quetv = itemView.findViewById(R.id.yourque_que_item_tv);
+        deletebtn = itemView.findViewById(R.id.yourque_delete_item_que);
+
+        Picasso.get().load(url).into(imageView);
+        nametv.setText(name);
+        timetv.setText(time);
+        quetv.setText(question);
+
+    }
 }

@@ -39,6 +39,7 @@ import com.timeepass.project.letsconnect.Class.Viewholder_Question;
 import com.timeepass.project.letsconnect.ImageActivity;
 import com.timeepass.project.letsconnect.PrivacyActivity;
 import com.timeepass.project.letsconnect.R;
+import com.timeepass.project.letsconnect.ReplyActivity;
 import com.timeepass.project.letsconnect.UserProfile.UpdateProfile;
 
 public class AskFragment extends Fragment implements View.OnClickListener {
@@ -113,6 +114,22 @@ public class AskFragment extends Fragment implements View.OnClickListener {
                         String privacy = getItem(position).getPrivacy();
                         String userid = getItem(position).getUserid();
 
+
+                        holder.replybtn.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+
+
+                                Intent intent = new Intent(getActivity(), ReplyActivity.class);
+                                intent.putExtra("uid", userid);
+                                intent.putExtra("q", que);
+                                intent.putExtra("postkey", postkey);
+                               // intent.putExtra("key", privacy);
+                                startActivity(intent);
+                            }
+                        });
+
+
                         holder.favouriteChecker(postkey);
                         holder.fvrt_btn.setOnClickListener(new View.OnClickListener() {
                             @Override
@@ -143,8 +160,8 @@ public class AskFragment extends Fragment implements View.OnClickListener {
                                                 member.setQuestion(que);
 
 
-                                                String id = fvrt_listRef.push().getKey();
-                                                fvrt_listRef.child(id).setValue(member);
+                                                //String id = fvrt_listRef.push().getKey();
+                                                fvrt_listRef.child(postkey).setValue(member);
                                                 fvrtChecker = false;
 
                                             }
@@ -178,7 +195,7 @@ public class AskFragment extends Fragment implements View.OnClickListener {
 
     }
 
-    private void delete(String time)
+     void delete(String time)
     {
         Query query = fvrt_listRef.orderByChild("time").equalTo(time);
         query.addListenerForSingleValueEvent(new ValueEventListener() {
