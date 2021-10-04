@@ -25,6 +25,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.squareup.picasso.Picasso;
 import com.timeepass.project.letsconnect.Class.BottomSheetMenu;
 import com.timeepass.project.letsconnect.ImageActivity;
+import com.timeepass.project.letsconnect.IndividualPost;
 import com.timeepass.project.letsconnect.R;
 import com.timeepass.project.letsconnect.UserProfile.CreateProfile;
 import com.timeepass.project.letsconnect.UserProfile.UpdateProfile;
@@ -34,7 +35,7 @@ import org.w3c.dom.Text;
 public class ProfileFragment extends Fragment implements View.OnClickListener
 {
     ImageView imageView;
-    TextView nameEt, profEt, bioEt, emailEt, webEt;
+    TextView nameEt, profEt, bioEt, emailEt, webEt, postTv;
     ImageButton ib_edit, imageButtonmenu;
 
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -64,6 +65,11 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
          bioEt = getActivity().findViewById(R.id.tv_bio_proffrag);
          emailEt = getActivity().findViewById(R.id.tv_email_proffrag);
          webEt = getActivity().findViewById(R.id.tv_web_proffrag);
+         postTv = getActivity().findViewById(R.id.tv_post_proffrag);
+
+
+         postTv.setOnClickListener(this);
+
 
         ib_edit = getActivity().findViewById(R.id.ib_edit_f1);
         imageButtonmenu = getActivity().findViewById(R.id.ib_menu_f1);
@@ -91,6 +97,10 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
             case R.id.iv_proffrag:
                 Intent intent1 = new Intent(getActivity(), ImageActivity.class);
                 startActivity(intent1);
+                break;
+            case R.id.tv_post_proffrag:
+                Intent intent5 = new Intent(getActivity(), IndividualPost.class);
+                startActivity(intent5);
                 break;
             case R.id.tv_web_proffrag:
                 try {

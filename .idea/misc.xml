@@ -26,12 +26,19 @@
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_turned_in_24.xml" value="0.2390625" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_turned_in_not_24.xml" value="0.2390625" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_baseline_work_24.xml" value="0.24270833333333333" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_bio.xml" value="0.10462962962962963" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_comment.xml" value="0.10462962962962963" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_dislike.xml" value="0.10462962962962963" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_like.xml" value="0.10462962962962963" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_moreoptions.xml" value="0.10462962962962963" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/ic_name.xml" value="0.24270833333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_answer.xml" value="0.2" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_ask.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_create_profile.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_image.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_individual_post.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_login.xml" value="0.10771947527749748" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_post.xml" value="0.2" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_privacy.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_related_questions.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/activity_reply.xml" value="0.264" />
@@ -42,9 +49,20 @@
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/bottom_sheet.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/bottom_sheet_askfrag.xml" value="0.18659420289855072" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/bottom_sheet_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/custom_exoplayer.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/fragment_individual_post.xml" value="0.1408514492753623" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/homefragment.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/images_tab.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/post_images.xml" value="0.12907608695652173" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/post_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/post_options.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/post_videos.xml" value="0.12907608695652173" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/profilefragment.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/question_item.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/related_item.xml" value="0.4" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/requestfragment.xml" value="0.10595358224016145" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/stories_tab.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/videos_tab.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/layout/yourque_item.xml" value="0.18297101449275363" />
       </map>
     </option>

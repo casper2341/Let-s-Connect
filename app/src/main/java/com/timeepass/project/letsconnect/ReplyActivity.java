@@ -86,7 +86,6 @@ public class ReplyActivity extends AppCompatActivity {
 
 
 
-
         Allquestions = database.getReference("All Questions").child(post_key).child("Answer");
         votesref = database.getReference("votes");
 
@@ -114,6 +113,7 @@ public class ReplyActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
+
 
         reference.get()
                 .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
@@ -164,16 +164,18 @@ public class ReplyActivity extends AppCompatActivity {
         FirebaseRecyclerAdapter<AnswerMember, AnsViewholder> firebaseRecyclerAdapter =
                 new FirebaseRecyclerAdapter<AnswerMember, AnsViewholder>(options) {
                     @Override
-                    protected void onBindViewHolder(@NonNull AnsViewholder holder, int position, @NonNull AnswerMember model) {
+                    protected void onBindViewHolder(@NonNull AnsViewholder holder, int position, @NonNull final AnswerMember model) {
 
                         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                         final String currentuserid = user.getUid();
+
+                        final String postkey = getRef(position).getKey();
 
                         holder.setAnswer(getApplication(), model.getName(), model.getAnswer(),
                                 model.getUid(), model.getTime(), model.getUrl());
 
 
-                        final String postkey = getRef(position).getKey();
+
 
                         holder.upvoteChecker(post_key);
 

@@ -24,10 +24,8 @@ public class AnsViewholder extends RecyclerView.ViewHolder
     public TextView nameTv, timeTv, ansTv, upvoteTv, votesNoTv;
     int votesCount;
     DatabaseReference reference;
-    FirebaseDatabase  database = FirebaseDatabase.getInstance();;
+    FirebaseDatabase  database;
 
-    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-    String currentuid = user.getUid();
 
     public AnsViewholder(@NonNull View itemView) {
         super(itemView);
@@ -41,8 +39,6 @@ public class AnsViewholder extends RecyclerView.ViewHolder
         timeTv = itemView.findViewById(R.id.tv_time_ans);
         ansTv = itemView.findViewById(R.id.tv_ans);
 
-        upvoteTv = itemView.findViewById(R.id.tv_vote_ans);
-        votesNoTv = itemView.findViewById(R.id.tv_vote_no);
 
         nameTv.setText(name);
         timeTv.setText(time);
@@ -54,7 +50,14 @@ public class AnsViewholder extends RecyclerView.ViewHolder
 
     public void upvoteChecker(String postkey)
     {
+        database = FirebaseDatabase.getInstance();
         reference = database.getReference("votes");
+
+        upvoteTv = itemView.findViewById(R.id.tv_vote_ans);
+        votesNoTv = itemView.findViewById(R.id.tv_vote_no);
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        final String currentuid = user.getUid();
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override

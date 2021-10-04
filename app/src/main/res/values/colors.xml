@@ -10,4 +10,6 @@
 
     <color name="red">#FF061E</color>
     <color name="grey">#AAA4AA</color>
+
+    <color name ="colorPrimary">#FF061E</color>
 </resources>
