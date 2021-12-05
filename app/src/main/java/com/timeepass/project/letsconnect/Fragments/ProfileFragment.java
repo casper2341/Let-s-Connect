@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -23,6 +24,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.squareup.picasso.Picasso;
+import com.timeepass.project.letsconnect.ChatActivity.ChatActivity;
 import com.timeepass.project.letsconnect.Class.BottomSheetMenu;
 import com.timeepass.project.letsconnect.ImageActivity;
 import com.timeepass.project.letsconnect.IndividualPost;
@@ -44,6 +46,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
     DocumentReference reference;
     FirebaseFirestore firestore = FirebaseFirestore.getInstance();
 
+    Button btnsendmessage;
 
     @Nullable
     @Override
@@ -68,6 +71,9 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
          postTv = getActivity().findViewById(R.id.tv_post_proffrag);
 
 
+         btnsendmessage = getActivity().findViewById(R.id.btn_sendmessage_proffrag);
+
+
          postTv.setOnClickListener(this);
 
 
@@ -79,6 +85,8 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
 
         imageView.setOnClickListener(this);
         webEt.setOnClickListener(this);
+
+        btnsendmessage.setOnClickListener(this);
     }
 
     @Override
@@ -101,6 +109,10 @@ public class ProfileFragment extends Fragment implements View.OnClickListener
             case R.id.tv_post_proffrag:
                 Intent intent5 = new Intent(getActivity(), IndividualPost.class);
                 startActivity(intent5);
+                break;
+            case R.id.btn_sendmessage_proffrag:
+                Intent in = new Intent(getActivity(), ChatActivity.class);
+                startActivity(in);
                 break;
             case R.id.tv_web_proffrag:
                 try {

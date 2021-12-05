@@ -3,6 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable-v24/ic_baseline_black.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable-v24/ic_baseline_pause_white.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable-v24/receiver_left.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable-v24/receiver_right.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable-v24/sender_left.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable/ic_baseline_mic_24.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable/ic_baseline_pause_black.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.2390625" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable/ic_baseline_white.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable/ic_grey_search_24.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable/receiver_back.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable/search_back.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable/send_back.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/drawable/sender_back.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/layout/activity_chat.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/layout/activity_message.xml" value="0.4" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/layout/activity_send_images.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/layout/askfragment.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/layout/chat_profile_item.xml" value="0.4" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/layout/message_layout.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/layout/profile.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/layout/profilefragment.xml" value="0.10746720484359233" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/layout/question_item.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Let-s-Connect/app/src/main/res/layout/record.xml" value="0.4" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable-v24/bottom_sheet_lock.xml" value="0.1398148148148148" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable-v24/custom_input_question.xml" value="0.24270833333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LetsConnect/app/src/main/res/drawable/background_custom_reply.xml" value="0.1398148148148148" />
